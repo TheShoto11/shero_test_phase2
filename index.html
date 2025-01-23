@@ -23,14 +23,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="image-container">
-      <img src="images\headerBronze_1920x1100.png" alt="image" />
-      <div class="overlay">
-        <h2>Add color to your<br /><span> masterpiece</span></h2>
-        <button>Shop Now</button>
-      </div>
-    </div>
     <header>
+      <div class="image-container">
+        <img src="images\headerBronze_1920x1100.png" alt="image" />
+        <div class="overlay">
+          <h2>Add color to your<br /><span> masterpiece</span></h2>
+          <button>Shop Now</button>
+        </div>
+      </div>
       <div class="flex-container">
         <div class="item">
           <img src="images/header2_577x577.png" alt="GLIDE" />
@@ -49,58 +49,37 @@
         </div>
       </div>
     </header>
-
     <footer>
       <h1>FEATURED PRODUCTS</h1>
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides product-container">
+          <ul class="glide__slides">
             <li class="glide__slide">
-              <div>
-                <div class="footer-image">
-                  <img
-                    src="images/footer1_334x370.png"
-                    alt="EMBROIDERY STABILIZER"
-                  />
-                </div>
-                <p>EMBROIDERY STABILIZER</p>
+              <div class="footer-image">
+                <img
+                  src="images/footer1_334x370.png"
+                  alt="EMBROIDERY STABILIZER"
+                />
               </div>
+              <p>EMBROIDERY STABILIZER</p>
             </li>
             <li class="glide__slide">
-              <div>
-                <div class="footer-image">
-                  <img
-                    src="images/footer2_319x354.png"
-                    alt="CUBBIE GREY ELEPHANT"
-                  />
-                </div>
-                <p>CUBBIE GREY ELEPHANT</p>
+              <div class="footer-image">
+                <img
+                  src="images/footer2_319x354.png"
+                  alt="CUBBIE GREY ELEPHANT"
+                />
               </div>
-            </li>
-            <li class="glide__slide">
-              <div>
-                <div class="footer-image">
-                  <img
-                    src="images/footer3_4_356x395.png"
-                    alt="KIMBERBELL CUP OF CHEER"
-                  />
-                </div>
-                <p>KIMBERBELL CUP OF CHEER</p>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div>
-                <div class="footer-image">
-                  <img
-                    src="images/footer3_4_356x395.png"
-                    alt="KIMBERBELL TWO SCOOPS"
-                  />
-                </div>
-                <p>KIMBERBELL TWO SCOOPS</p>
-              </div>
+              <p>CUBBIE GREY ELEPHANT</p>
             </li>
           </ul>
         </div>
+      </div>
+      <div class="carousel-controls">
+        <input type="file" id="imageUpload" accept="image/*" />
+        <input type="text" id="imageTitle" placeholder="Enter product title" />
+        <button id="addProductBtn">Add Product</button>
+        <button id="removeProductBtn">Remove Product</button>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
