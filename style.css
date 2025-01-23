@@ -1,0 +1,115 @@
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: "Josefin sans", sans-serif;
+  margin: 0;
+}
+.image-container {
+  position: relative;
+  display: inline-flex;
+  max-width: 100%;
+}
+.image-container img {
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  right: 12rem;
+  top: 13rem;
+  width: 40.125rem;
+  height: 22.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  text-align: end;
+}
+
+.overlay h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+}
+.overlay span {
+  margin-right: -1.5rem;
+}
+
+.overlay button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 16px 41px;
+  font-size: 20px;
+  line-height: 14px;
+  cursor: pointer;
+  margin-right: -1.5rem;
+}
+
+.overlay button:hover {
+  background-color: white;
+  color: black;
+}
+header {
+  padding-top: 2.5rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item img {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.item p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 4.125px;
+  color: #000000;
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+footer h1 {
+  font-weight: 400;
+  font-size: 2.188rem;
+  line-height: 4.125rem;
+}
+
+footer .product-container {
+  display: flex;
+  gap: 5px;
+}
+
+footer .product-container div {
+  flex: 1 1 200px;
+}
+.fake {
+  box-shadow: 0px 5px 5px grey;
+  padding-bottom: 1rem;
+  background-color: #cccccc;
+}
+
+footer img {
+  width: 85%;
+}
+
+footer .product-container div p {
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  text-align: start;
+  font-weight: 300;
+}
